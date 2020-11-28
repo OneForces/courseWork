@@ -1,0 +1,33 @@
+.rating-block {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 5px;
+}
+
+.rating {
+
+}
+
+.rating-stars {
+  --percent: calc(var(--rating) / 5 * 100%);
+
+  display: inline-block;
+  font-family: Times, fantasy;
+  line-height: 1;
+
+  &::before {
+    content: '★★★★★';
+    letter-spacing: 3px;
+    background: linear-gradient(90deg, #fc0 var(--percent), #bbb var(--percent));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+.rating-reviews {
+  font-family: "PT Sans", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #501951;
+}

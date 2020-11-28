@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
+.catalog {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
+.sort-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "PT Sans", sans-serif;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 0 25px;
+  box-sizing: border-box;
+  height: auto;
+}
+
+.sort-title {
+  font-weight: 700;
+}
+
+.sort-select {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sort-option {
+  padding: 25px 10px;
+  cursor: pointer;
+}
+
+.option-selected {
+  color: #6c3451;
+  font-weight: bold;
+}
+
+.goods-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  list-style: none inside none;
+}

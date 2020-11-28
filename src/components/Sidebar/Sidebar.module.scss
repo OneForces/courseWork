@@ -1,0 +1,21 @@
+.sidebar {
+  width: auto;
+}
+
+.sidebar-head-catalog {
+  background: #712858;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.navigation-menu {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar * a {
+  text-decoration: none;
+  padding: 5px 0 5px 19px;
+  display: block;
+}

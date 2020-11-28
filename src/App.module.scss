@@ -1,0 +1,13 @@
+.app {
+  padding: 0 calc(50% - 592px);
+  display: flex;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+@media (max-width: 768px) {
+  .app {
+    padding: 0;
+    flex-direction: column;
+  }
+}

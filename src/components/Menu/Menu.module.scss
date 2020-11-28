@@ -1,0 +1,38 @@
+@import '../../_variables.scss';
+
+.top-menu {
+  background-color: $magenta-color;
+  padding: 12px;
+}
+
+.top-menu-content {
+  width: 1181px;
+  margin: auto;
+}
+
+.top-menu-list {
+  display: inline-block;
+}
+
+.top-menu * ul {
+  list-style: disc inside;
+}
+
+.top-menu * li {
+  display: inline-block;
+  color: $white;
+  list-style: none;
+}
+
+.top-menu * li + li {
+  margin-left: 20px;
+}
+
+.link {
+  outline: none;
+  color: $white;
+}
+
+.active {
+  text-decoration: underline !important;
+}

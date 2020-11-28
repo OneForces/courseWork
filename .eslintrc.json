@@ -1,0 +1,54 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended"
+  ],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 2020,
+    "sourceType": "module"
+  },
+  "plugins": [
+    "react",
+    "import"
+  ],
+  "settings": {
+    "react": {
+      "version": "detect"
+    },
+    "import/resolver": {
+      "node": {
+        "paths": ["src"]
+      }
+    }
+  },
+  "rules": {
+    "max-len": ["warn", { "code": 120 }],
+    "linebreak-style": ["error", "unix"],
+    "comma-dangle": ["error", "always-multiline"],
+    "object-curly-spacing": ["error", "always"],
+    "arrow-parens": ["error", "always"],
+    "no-unused-vars": ["off"],
+
+    "react/prop-types": ["off"],
+    "react/display-name": ["off"],
+
+    "react/jsx-indent": ["error", 2, { "checkAttributes": true, "indentLogicalExpressions": true }],
+    "react/jsx-indent-props": ["error", "first"],
+    "react/jsx-curly-brace-presence": ["error", "never"],
+    "react/jsx-equals-spacing": ["error", "never"],
+    "react/jsx-no-duplicate-props": ["error", { "ignoreCase": true }],
+    "react/jsx-tag-spacing": ["error", { "beforeClosing": "never" }],
+    "react/jsx-pascal-case": ["error", { "allowAllCaps": false }],
+    "react/jsx-no-undef": ["error", { "allowGlobals":  false }],
+    "react/jsx-no-comment-textnodes": ["error"],
+
+    "import/no-default-export": ["error"]
+  }
+}

@@ -1,0 +1,23 @@
+@import '../../../variables';
+
+.sidebar-item {
+  background-color: $white;
+  margin: 0;
+  padding-left: 40px;
+  list-style: none;
+
+  &:hover {
+    background-color: $magenta-light-color;
+    transition: background 0.2s ease-in-out;
+  }
+}
+
+.sidebar-item + .sidebar-item {
+  border-top: 1px dashed $gray-color;
+}
+
+.link {
+  font-size: 15px;
+  line-height: 20px;
+  padding: 10px 0 0 0;
+}

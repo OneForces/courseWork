@@ -1,0 +1,134 @@
+.order {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  h1 {
+    font-size: 30px;
+    margin: 20px 0;
+    color: #6c3451;
+    text-align: center;
+    display: block;
+    font-family: "PT Sans", sans-serif;
+  }
+}
+
+.orderForm {
+  display: block;
+  color: #4c4c4c;
+  border: 1px solid #bebebe;
+  border-radius: 5px;
+  background: #f1eee9;
+  padding: 20px 20px 20px 100px;
+}
+
+.formRow {
+  margin: 6px 0;
+
+  label {
+    display: inline-block;
+    width: 150px;
+    font-size: 19px;
+  }
+
+  input {
+    border-radius: 3px;
+    border: 1px solid #b4b4b4;
+    height: 40px;
+    width: 400px;
+    padding: 0 0 0 10px;
+    font-size: 17px;
+  }
+
+  textarea {
+    vertical-align: top;
+    border-radius: 3px;
+    border: 1px solid #b4b4b4;
+    height: 100px;
+    width: 400px;
+    padding: 0 10px;
+    font-size: 17px;
+  }
+}
+
+.orderInfo {
+  margin: 20px 0;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.policy {
+  margin-top: 20px;
+
+  span {
+    text-decoration: underline;
+  }
+
+  span:hover {
+    cursor: pointer;
+  }
+}
+
+.buttonWrapper {
+  display: flex;
+ justify-content: center;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.orderButton {
+  position: relative;
+  border: 1px solid #d3b642;
+  border-radius: 3px;
+  background-color: #ffdc53;
+  text-align: center;
+  height: 36px;
+  width: 50%;
+  text-decoration: none;
+  user-select: none;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.orderComplete {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 auto;
+  gap: 15px;
+}
+
+.animated {
+  height: 64px;
+  width: 64px;
+
+  path {
+    fill: none;
+    stroke: #7ac142;
+    stroke-width: 4;
+    stroke-dasharray: 23;
+    stroke-dashoffset: 23;
+    animation: draw 1s linear forwards;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+}
+
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .order {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+  }
+
+  .orderForm {
+    padding: 20px;
+  }
+}

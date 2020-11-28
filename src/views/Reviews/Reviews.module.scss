@@ -1,0 +1,35 @@
+.reviews {
+  margin-bottom: 25px;
+
+  h1 {
+    font-family: "PT Sans", sans-serif;
+    font-size: 30px;
+    margin: 20px auto;
+    color: #6c3451;
+    text-align: center;
+    display: block;
+  }
+}
+
+.reviews-list {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.reviews-item {
+  list-style: none;
+  border: 1px solid #cbc9cc;
+  padding: 10px;
+}
+
+.review-header {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.review-text {
+  margin: 0 0 10px;
+}

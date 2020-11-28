@@ -1,0 +1,82 @@
+.pic {
+  height: 180px;
+  margin: 10px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.engraving {
+  margin-bottom: 20px;
+
+  h1 {
+    font-size: 30px;
+    margin: 20px 0;
+    color: #6c3451;
+    text-align: center;
+    display: block;
+    font-family: "PT Sans", sans-serif;
+  }
+
+  p {
+    margin: 0 0 10px;
+  }
+
+  img {
+    height: 180px;
+    margin: 10px;
+  }
+
+  ul {
+    list-style: disc inside;
+  }
+}
+
+.content-img {
+  text-align: center;
+}
+
+.simple {
+  border: 1px solid #000;
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+
+  td {
+    border: 1px solid #000;
+    text-align: center;
+    vertical-align: middle;
+    padding: 5px;
+  }
+
+  td:nth-child(1) {
+    text-align: left;
+  }
+}
+
+.order-button {
+  border-radius: 6px;
+  height: 45px;
+  width: 100%;
+  text-decoration: none;
+  text-align: center;
+  margin: 0 auto 20px;
+  background-color: #8f496d;
+  position: relative;
+
+  &:hover {
+    background-color: #8a325f;
+    cursor: pointer;
+  }
+
+  &-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-weight: bold;
+    font-family: "PT Sans", sans-serif;
+  }
+}

@@ -1,0 +1,37 @@
+@import './templates';
+
+*, *:after, *:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+    'Ubuntu','Droid Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a:-webkit-any-link {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+#jewelry-root {
+  width: 100%;
+  min-width: 1181px;
+  margin: 0 auto;
+  min-height: 100%;
+  height: auto !important;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  #jewelry-root {
+    max-width: 100vw;
+    min-width: 100vh;
+    overflow: auto;
+  }
+}
