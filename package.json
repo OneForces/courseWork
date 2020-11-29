@@ -19,7 +19,7 @@
     "eslint-plugin-flowtype": "^3.0",
     "eslint-plugin-import": "^2.20.1",
     "eslint-plugin-react": "^7.18.3",
-    "eslint_d": "^9.1.2",
+    "eslint_d": "^9.1.2"
   },
   "scripts": {
     "start": "react-scripts start",
