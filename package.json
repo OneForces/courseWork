@@ -2,6 +2,7 @@
   "name": "jewerely-store",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://secondjk.github.io/jewelry-store-project/",
   "dependencies": {
     "classnames": "^2.2.6",
     "effector": "^21.6.0",
@@ -18,12 +19,14 @@
     "eslint-plugin-flowtype": "^3.0",
     "eslint-plugin-import": "^2.20.1",
     "eslint-plugin-react": "^7.18.3",
-    "eslint_d": "^9.1.2"
+    "eslint_d": "^9.1.2",
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
