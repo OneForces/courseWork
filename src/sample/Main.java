@@ -6,10 +6,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-//test3
-=======
 
->>>>>>> parent of 33908bf... test2
 public class Main extends Application {
 
     @Override
